@@ -889,9 +889,8 @@ h2.marketPrice {
 }
 
 .investDetailWrap .investDetail {
-  width: 50%;
-  margin-right: 15px;
-  max-width: 720px;
+  width: 100%;
+  margin-right: 0;
   margin: 0 auto;
 }
 
