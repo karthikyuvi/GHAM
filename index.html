@@ -30,29 +30,29 @@
 				<div class="logoTitle">
 				  GHTA
 				</div>
-				<input id="menu-toggle" type="checkbox" />
-				<label class='menu-button-container' for="menu-toggle">
-				<div class='menu-button'></div>
-			  </label>
-				<ul class="menu">
-					<li class="menu-item"><a href="#fundsection" data-target="fundsection">The
-						Fund</a>
-				</li>
-				<!-- <li class="menu-list has-text-centered is-size-5"><a href="#section1" data-target="section1">The
-					Adviser</a>
-			</li> -->
-
-				<li class="menu-item"><a href="#section2" data-popup-open="howToinvest" data-target="section2">How to
-						Invest</a>
-				</li>
-				<li class="menu-item"><a href="#scrollEndWp" data-target="scrollEndWp">ETF Details</a>
-				</li>
-
-				<li class="menu-item"><a href="#faq" data-target="faq">FAQ</a>
-				</li>
-				<li class="menu-item"><a href="#contactUs" data-target="contactUs">Contact Us</a>
-				</li>
-				</ul>
+				<div id="sideNav">
+					<nav>
+						<ul>
+							<li class="menu-item"><a href="#fundsection" data-target="fundsection">The
+								Fund</a>
+						</li>
+						<li class="menu-item"><a href="#section2" data-popup-open="howToinvest" data-target="section2">How to
+								Invest</a>
+						</li>
+						<li class="menu-item"><a href="#scrollEndWp" data-target="scrollEndWp">ETF Details</a>
+						</li>
+		
+						<li class="menu-item"><a href="#faq" data-target="faq">FAQ</a>
+						</li>
+						<li class="menu-item"><a href="#contactUs" data-target="contactUs">Contact Us</a>
+						</li>
+						</ul>
+					</nav>
+				</div>
+				<div id="menuBtn">
+					<img src="https://i.postimg.cc/j5RRCtb2/menu.png" id="menu">
+				</div>
+				
 			  </section>
 		</header>
 		
@@ -1303,11 +1303,41 @@
 			var mysct2 = mystring * 100;
 			document.getElementsByClassName('fund_thirty_day_median_bid_ask')[i].innerHTML = mysct2 + '%';
 	    }
+		</script>
+		<!-- MENU -->
+		<script>
+		var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        sideNav.style.right == "-250px";
+        menuBtn.onclick = function() {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "https://i.postimg.cc/cJRss6PP/close.png";
+            } else {
+                sideNav.style.right = "-250px";
+                menu.src = "https://i.postimg.cc/j5RRCtb2/menu.png";
+            }
+        }
 
+        $(document).ready(function() {
 
-	
+            $("a").on('click', function(event) {
 
-	</script>
+                if (this.hash !== "") {
+
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+		</script>
 </body>
 
 </html>
