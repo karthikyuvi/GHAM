@@ -2,7 +2,7 @@
 <html>
 
 <head>
-
+    <title>GHTA-Goose Hollow Capital</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
@@ -22,17 +22,20 @@
 </head>
 
 <body class="is-preload">
-	<div class="header">
 
-		<div class="icon-container">
-			<div id="menuicon">
-				<div class="bar bar1"></div>
-				<div class="bar bar2"></div>
-			</div>
-		</div>
-		<div class="mobile-menu">
-			<ul class="menu">
-				<li class="menu-item"><a href="#fundsection" data-target="fundsection">The
+
+	<div id="wrapper">
+        <header>
+			<section class="top-nav">
+				<div class="logoTitle">
+				  GHTA
+				</div>
+				<input id="menu-toggle" type="checkbox" />
+				<label class='menu-button-container' for="menu-toggle">
+				<div class='menu-button'></div>
+			  </label>
+				<ul class="menu">
+					<li class="menu-item"><a href="#fundsection" data-target="fundsection">The
 						Fund</a>
 				</li>
 				<!-- <li class="menu-list has-text-centered is-size-5"><a href="#section1" data-target="section1">The
@@ -49,45 +52,10 @@
 				</li>
 				<li class="menu-item"><a href="#contactUs" data-target="contactUs">Contact Us</a>
 				</li>
-			</ul>
-		</div>
-	</div>
-
-	<div id="wrapper">
-
-		<aside class="menu" id="page--menu">
-
-			<nav class="gs-menu">
-				<ul>
-
-					<li class="menu-list has-text-centered is-size-5"><a href="#fundsection"
-							data-target="fundsection">The
-							Fund</a>
-					</li>
-					<!-- <li class="menu-list has-text-centered is-size-5"><a href="#section1" data-target="section1">The
-							Adviser</a>
-					</li> -->
-
-					<li class="menu-list has-text-centered is-size-5"><a href="#section2" data-popup-open="howToinvest"
-							data-target="section2">How to
-							Invest</a>
-					</li>
-					<li class="menu-list has-text-centered is-size-5"><a href="#scrollEndWp"
-							data-target="scrollEndWp">ETF Details</a>
-					</li>
-
-					<li class="menu-list has-text-centered is-size-5"><a href="#faq" data-target="faq">FAQ</a>
-					</li>
-					<li class="menu-list has-text-centered is-size-5"><a href="#contactUs"
-							data-target="contactUs">Contact Us</a>
-					</li>
-
 				</ul>
-
-			</nav>
-		</aside>
-
-
+			  </section>
+		</header>
+		
 
 		<div class="headDataWp">
 			<h2>As of: <span class="subhead fund_info_date">05/12/2022</span></h2>
@@ -1325,15 +1293,6 @@
 
 
 		})
-	</script>
-	<script>
-			(function () {
-				const header = document.querySelector('.header');
-				const icon = document.querySelector('.icon-container');
-				icon.onclick = function () {
-					header.classList.toggle('menu-open');
-				}
-			}());
 	</script>
 
 	<script>
