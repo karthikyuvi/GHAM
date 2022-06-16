@@ -30,7 +30,7 @@
 				<div class="logoTitle">
 				  GHTA
 				</div>
-				<div id="sideNav">
+				<div id="sideNav" id="sideNav" style="right: -250px;">
 					<nav>
 						<ul>
 							<li class="menu-item"><a href="#fundsection" data-target="fundsection">The
@@ -1320,23 +1320,7 @@
             }
         }
 
-        $(document).ready(function() {
-
-            $("a").on('click', function(event) {
-
-                if (this.hash !== "") {
-
-                    event.preventDefault();
-                    var hash = this.hash;
-
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function() {
-                        window.location.hash = hash;
-                    });
-                }
-            });
-        });
+    
 		</script>
 </body>
 
