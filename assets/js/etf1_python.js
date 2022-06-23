@@ -11,10 +11,10 @@ for( i=0 ;i< document.getElementsByClassName('fund_nav').length;i++) { document.
 for( i=0 ;i< document.getElementsByClassName('fund_close_price').length;i++) { document.getElementsByClassName('fund_close_price')[i].innerHTML = '22.2139'; }
 for( i=0 ;i< document.getElementsByClassName('fund_discount_premium').length;i++) { document.getElementsByClassName('fund_discount_premium')[i].innerHTML = '0.1375'; }
 for( i=0 ;i< document.getElementsByClassName('fund_thirty_day_median_bid_ask').length;i++) { document.getElementsByClassName('fund_thirty_day_median_bid_ask')[i].innerHTML = '0.003873'; }
-for( i=0 ;i< document.getElementsByClassName('nav_chg_dollar').length;i++) { document.getElementsByClassName('nav_chg_dollar')[i].innerHTML = '-1.2803'; }
-for( i=0 ;i< document.getElementsByClassName('nav_chg_percent').length;i++) { document.getElementsByClassName('nav_chg_percent')[i].innerHTML = '-5.4565'; }
-for( i=0 ;i< document.getElementsByClassName('price_chg_dollar').length;i++) { document.getElementsByClassName('price_chg_dollar')[i].innerHTML = '-1.2596'; }
-for( i=0 ;i< document.getElementsByClassName('price_chg_percent').length;i++) { document.getElementsByClassName('price_chg_percent')[i].innerHTML = '-5.3661'; }
+for( i=0 ;i< document.getElementsByClassName('nav_chg_dollar').length;i++) { document.getElementsByClassName('nav_chg_dollar')[i].innerHTML = '0.252'; }
+for( i=0 ;i< document.getElementsByClassName('nav_chg_percent').length;i++) { document.getElementsByClassName('nav_chg_percent')[i].innerHTML = '1.149'; }
+for( i=0 ;i< document.getElementsByClassName('price_chg_dollar').length;i++) { document.getElementsByClassName('price_chg_dollar')[i].innerHTML = '0.209'; }
+for( i=0 ;i< document.getElementsByClassName('price_chg_percent').length;i++) { document.getElementsByClassName('price_chg_percent')[i].innerHTML = '0.9498'; }
 for( i=0 ;i< document.getElementsByClassName('premium_discount_days_q').length;i++) { document.getElementsByClassName('premium_discount_days_q')[i].innerHTML = '62.0'; }
 for( i=0 ;i< document.getElementsByClassName('premium_discount_days_y').length;i++) { document.getElementsByClassName('premium_discount_days_y')[i].innerHTML = '31.0'; }
 for( i=0 ;i< document.getElementsByClassName('current_cal_q_pd_premium').length;i++) { document.getElementsByClassName('current_cal_q_pd_premium')[i].innerHTML = '31'; }
