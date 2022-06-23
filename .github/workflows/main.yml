@@ -34,4 +34,6 @@ jobs:
           git config --local user.email "actions@github.com"
           git add assets/js/*
           git commit -am "GH ACTION Headlines $(date)"
+      - run: git pull
+      - run: git status
           git push origin main
