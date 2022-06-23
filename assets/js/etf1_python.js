@@ -10,7 +10,7 @@ for( i=0 ;i< document.getElementsByClassName('fund_info_date').length;i++) { doc
 for( i=0 ;i< document.getElementsByClassName('fund_nav').length;i++) { document.getElementsByClassName('fund_nav')[i].innerHTML = '22.1834'; }
 for( i=0 ;i< document.getElementsByClassName('fund_close_price').length;i++) { document.getElementsByClassName('fund_close_price')[i].innerHTML = '22.2139'; }
 for( i=0 ;i< document.getElementsByClassName('fund_discount_premium').length;i++) { document.getElementsByClassName('fund_discount_premium')[i].innerHTML = '0.1375'; }
-for( i=0 ;i< document.getElementsByClassName('fund_thirty_day_median_bid_ask').length;i++) { document.getElementsByClassName('fund_thirty_day_median_bid_ask')[i].innerHTML = '0.003873'; }
+for( i=0 ;i< document.getElementsByClassName('fund_thirty_day_median_bid_ask').length;i++) { document.getElementsByClassName('fund_thirty_day_median_bid_ask')[i].innerHTML = '0.00'; }
 for( i=0 ;i< document.getElementsByClassName('nav_chg_dollar').length;i++) { document.getElementsByClassName('nav_chg_dollar')[i].innerHTML = '0.252'; }
 for( i=0 ;i< document.getElementsByClassName('nav_chg_percent').length;i++) { document.getElementsByClassName('nav_chg_percent')[i].innerHTML = '1.149'; }
 for( i=0 ;i< document.getElementsByClassName('price_chg_dollar').length;i++) { document.getElementsByClassName('price_chg_dollar')[i].innerHTML = '0.209'; }
