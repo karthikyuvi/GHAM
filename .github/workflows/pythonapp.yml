@@ -2,7 +2,7 @@ name: pythonapp
 
 on:
   schedule:
-    - cron: '45 0 * * 1-5' #run at 8 EST every weekday
+    - cron: '0 1 * * 1-5' #run at 8 EST every weekday
 
 jobs:
   build:
@@ -33,7 +33,7 @@ jobs:
           git config --local user.name actions-user
           git config --local user.email "actions@github.com"
           git add assets/js/*
+          git pull 
+          git status
           git commit -am "GH ACTION Headlines $(date)"
-      - run: git pull
-      - run: git status
           git push origin main
