@@ -65,7 +65,8 @@ with open("assets/js/etf1_python.js", 'w') as f:
     f.write(js_line('fund_exchg', fund_info['fund_listing_exchange']))
     f.write(js_line('fund_cusip', fund_info['fund_cusip']))
     f.write(js_line('fund_inception_date', fund_info['inception_date']))
-    f.write(js_line('fund_net_assets',"${:,.2f}".format(float(fund_info['fund_shares_outstanding']) * float(fund_info['nav']))))
+    f.write(js_line('fund_net_assets',
+                    "${:,.2f}".format(float(fund_info['fund_shares_outstanding']) * float(fund_info['nav']))))
     f.write(js_line('fund_shares_ots', "{:,}".format(fund_info['fund_shares_outstanding'])))
 
     f.write(js_line('fund_info_date', date_of_info))
